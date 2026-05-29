@@ -1,0 +1,33 @@
+version: '3.9'
+
+services:
+  gateway:
+    build: ./gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - pedidos-service
+
+  pedidos-service:
+    build: ./pedidos-service
+    ports:
+      - "3001:3001"
+
+  pagamentos-service:
+    build: ./pagamentos-service
+    ports:
+      - "3002:3002"
+
+  estoque-service:
+    build: ./estoque-service
+    ports:
+      - "3003:3003"
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin
+      POSTGRES_DB: pedidos
+    ports:
+      - "5432:5432"
