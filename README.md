@@ -31,3 +31,10 @@ kubectl apply -f k8s/
 
 Pipeline GitHub Actions em:
 `.github/workflows/ci.yml`
+
+
+## Vídeo de Apresentação
+
+Link do vídeo demonstrativo do projeto:
+
+https://www.youtube.com/watch?v=OuRwsrP_KIQ
