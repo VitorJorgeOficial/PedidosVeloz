@@ -17,9 +17,9 @@ docker compose up --build
 ## Serviços
 
 - Gateway: http://localhost:8080
-- Pedidos: http://localhost:3001
+- Pedidos: http://localhost:3001/Pedidos
 - Pagamentos: http://localhost:3002
-- Estoque: http://localhost:3003
+- Estoque: http://localhost:3003/Estoque
 
 ## Kubernetes
 
